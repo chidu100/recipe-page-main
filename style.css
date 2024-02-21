@@ -1,0 +1,175 @@
+@font-face {
+    font-family: outfit;
+    src: url(/assets/fonts/outfit/static/Outfit-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: YoungSerif;
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: outfit;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    padding: 3rem;
+}
+
+.container {
+    background-color: hsl(330, 100%, 98%);
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+article{
+    padding: 1.5rem;   
+}
+
+
+h1 {
+    font-family: YoungSerif;
+    font-size: 2rem;
+    color: hsl(24, 5%, 18%);
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-family: YoungSerif;
+    color: hsl(14, 45%, 36%);
+    letter-spacing: 0.05rem;
+}
+
+p , li{
+    line-height: 1.6;
+    color: hsl(30, 10%, 34%);
+}
+
+li{
+    margin-top: 0.5rem;
+}
+
+ul, ol {
+    padding-left: 20px;
+    padding-left: 20px; 
+    text-indent: 5px; 
+}
+
+ul li::marker {
+    color: hsl(14, 45%, 36%); 
+}
+
+
+ol li::marker {
+    color: hsl(14, 45%, 36%); 
+}
+
+.preparation-time ul li::marker {
+    color: inherit; 
+}
+
+ .preparation-time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.preparation-time h3 {
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 0.5rem;
+}
+
+.ingredients {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.instructions {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid hsl(30, 54%, 90%);
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-info{
+    margin-top: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid hsl(30, 18%, 87%); 
+}
+th {
+    font-weight: 500; 
+    color: hsl(30, 10%, 34%);
+}
+td {
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+
+tr:last-child th, tr:last-child td {
+    border-bottom: none;
+}
+
+.attribution { 
+    font-size: 11px;
+     text-align: center; 
+     margin-bottom: 2rem;
+    }
+
+ .attribution a {
+         color: hsl(228, 45%, 44%); 
+         text-decoration: none;
+        }
+
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1.5rem;
+            }
+        
+            .container {
+                padding: 1rem;
+            }
+        
+            h1 {
+                font-size: 1.5rem; 
+            }
+        
+            h2 {
+                font-size: 1.2rem; /
+            }
+        
+            .article, .preparation-time, .instructions, .nutrition-info {
+                padding: 1rem; 
+            }
+        
+            .attribution {
+                font-size: 10px; 
+            }
+            
+            img {
+                max-width: 100%;
+            }
+            
+        }
